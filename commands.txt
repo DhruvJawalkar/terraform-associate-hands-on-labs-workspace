@@ -2,3 +2,14 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 terraform destroy -auto-approve
+
+terraform show
+terraform fmt
+terraform state list
+
+terraform -version
+terraform -help
+terraform validate
+terraform plan -out myplan
+terraform apply myplan
+terraform plan -destroy
