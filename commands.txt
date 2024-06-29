@@ -13,3 +13,7 @@ terraform validate
 terraform plan -out myplan
 terraform apply myplan
 terraform plan -destroy
+
+terraform -h plan
+terraform version
+terraform providers
