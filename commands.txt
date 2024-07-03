@@ -17,3 +17,6 @@ terraform plan -destroy
 terraform -h plan
 terraform version
 terraform providers
+
+terraform output
+terraform output -json
