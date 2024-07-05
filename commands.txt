@@ -20,3 +20,4 @@ terraform providers
 
 terraform output
 terraform output -json
+terraform init -upgrade
