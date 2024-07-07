@@ -21,3 +21,22 @@ terraform providers
 terraform output
 terraform output -json
 terraform init -upgrade
+
+terraform taint aws_instance.ubuntu_server
+terraform untaint aws_instance.ubuntu_server
+terraform apply -replace="aws_instance.web_server"
+terraform import <resource.name> <unique_identifier
+terraform import aws_instance.aws_linux i-02050570f191270c5
+terraform state show aws_instance.aws_linux 
+terraform workspace show
+terraform workspace -help (new| list| show| select| delete)
+terraform workspace new development
+terraform workspace show
+terraform show
+terraform workspace select default
+terraform state (list | mv| pull| push| replace-provider| rm| show)
+terraform state list
+terraform state show aws_instance.ubuntu_server
+$env:TF_LOG="TRACE"
+$env:TF_LOG_PATH="terraform_log.txt"
+$env:TF_LOG=""
