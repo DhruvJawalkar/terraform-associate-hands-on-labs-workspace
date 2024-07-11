@@ -45,3 +45,6 @@ tree
 terraform state list
 terraform state show module.server.aws_instance.web
 terraform fmt -recursive
+
+terraform console
+> module.autoscaling
