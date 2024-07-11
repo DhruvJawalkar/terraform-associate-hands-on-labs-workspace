@@ -48,3 +48,12 @@ terraform fmt -recursive
 
 terraform console
 > module.autoscaling
+
+terraform plan -out myplan
+terraform apply myplan
+terraform plan -destroy
+terraform providers
+terraform init -migrate-state
+terraform validate -json
+terraform plan -refresh-only
+terraform apply -auto-approve
