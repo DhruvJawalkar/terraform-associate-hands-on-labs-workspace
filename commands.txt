@@ -57,3 +57,10 @@ terraform init -migrate-state
 terraform validate -json
 terraform plan -refresh-only
 terraform apply -auto-approve
+
+terraform show
+terraform state list
+terraform apply -lock-timeout=60s
+terraform init -migrate-state
+terraform login
+terraform init -reconfigure
