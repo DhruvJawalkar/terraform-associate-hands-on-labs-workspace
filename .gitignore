@@ -3,3 +3,5 @@
 .terraform/*
 .terraform.lock.*
 *.pem
+tfc-getting-started
+tfc-getting-started/*

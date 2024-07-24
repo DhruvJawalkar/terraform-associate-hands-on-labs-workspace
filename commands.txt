@@ -64,3 +64,12 @@ terraform apply -lock-timeout=60s
 terraform init -migrate-state
 terraform login
 terraform init -reconfigure
+
+//To get environment variable current value from poweshell
+Get-ChildItem -Path Env:\AWS_ACCESS_KEY_ID
+
+terraform validate
+terraform init -migrate-state
+terraform refresh (to view changes in infra)
+terraform plan -refresh-only (to view changes in infra)
+terraform apply -refresh-only (incorporates changes in infra into current local state)
