@@ -73,3 +73,9 @@ terraform init -migrate-state
 terraform refresh (to view changes in infra)
 terraform plan -refresh-only (to view changes in infra)
 terraform apply -refresh-only (incorporates changes in infra into current local state)
+terraform init -backend-config="state_configuration/dev_local.hcl" -migrate-state
+terraform init -backend-config="path=state_data/terraform.prod.tfstate" -migrate-state
+terraform init -backend-config="state_configuration/dev-s3-state.hcl" -migrate-state
+terraform init -backend-config="state_configuration/s3-state-bucket.hcl" \
+    -backend-config="state_configuration/dev-s3-state-key.hcl" \
+    -migrate-state
