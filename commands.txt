@@ -67,6 +67,7 @@ terraform init -reconfigure
 
 //To get environment variable current value from poweshell
 Get-ChildItem -Path Env:\AWS_ACCESS_KEY_ID
+Get-ChildItem -Path Env:\AWS_SECRET_ACCESS_KEY
 
 terraform validate
 terraform init -migrate-state
@@ -105,3 +106,6 @@ vault login <root token>
 vault kv put /secret/app phone_number=867-5309
 
 terraform graph
+
+terraform init -backend-config="state_configuration/dev.hcl"
+terraform init -backend-config="state_configuration/prod.hcl" -reconfigure
