@@ -93,3 +93,15 @@ terraform plan -var cloud=aws
 terraform plan -var cloud=alibabba
 terraform plan -var cloud=aws -var no_caps=training -var ip_address=1.1.1.1  -var character_limit=rpt
 terraform plan -var cloud=all -var no_caps=Training -var ip_address=1223.22.342.22  -var character_limit=ga
+
+vault version
+vault server -dev
+PowerShell:
+    $env:VAULT_ADDR="http://127.0.0.1:8200"
+cmd.exe:
+    set VAULT_ADDR=http://127.0.0.1:8200
+
+vault login <root token>
+vault kv put /secret/app phone_number=867-5309
+
+terraform graph
